@@ -1,0 +1,38 @@
+<hr>
+<h6>Pet Shelter</h6>
+<h5>Create this pet</h5>
+<form (submit)="createPet()">
+
+  <div class="form-group">
+    <label for="petname">Pet Name</label>
+    <input type="text" class="form-control" name="newPet.name" [(ngModel)]="newPet.name"> 
+  </div>
+
+  <div class="form-group">  
+    <label for="pettype">Pet Type</label>
+    <input type="text" class="form-control" name="newPet.type" [(ngModel)]="newPet.type">
+  </div>
+
+  <div class="form-group">  
+    <label for="Description">Description</label>
+    <input type="text" class="form-control" name="newPet.description" [(ngModel)]="newPet.description">
+  </div>
+
+  <div class="form-group">
+    <label for="skill1">Skill 1 </label>
+    <input type="text" class="form-control" name="newPet.skill1" [(ngModel)]="newPet.skill1">
+  </div>
+
+  <div class="form-group">  
+    <label for="skill2">Skill 2 </label>
+    <input type="text" class="form-control" name="newPet.skill2" [(ngModel)]="newPet.skill2">
+  </div>
+
+  <div class="form-group">  
+    <label for="skill3">Skill 3 </label>
+    <input type="text" class="form-control" name="newPet.skill3" [(ngModel)]="newPet.skill3">
+  </div>
+
+  <input type="submit" value="Create a pet">
+  <button type="reset" value="Reset">Cancel</button>
+</form>

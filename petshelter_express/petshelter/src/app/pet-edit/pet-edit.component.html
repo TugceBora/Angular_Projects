@@ -1,0 +1,26 @@
+
+<h4> Edit This Pet!! </h4>
+<form (submit)='updatePet()'>
+<input type= 'text' 
+  name='editpet.name' 
+  required minlength="3" 
+  [(ngModel)]= 'editpet.name' 
+  #editpetname= 'ngModel'/>
+  <div *ngIf='!editpet.name.valid'> Pet name more than 3 characters</div>
+  
+  <input type= 'text' 
+  name='editpet.type' 
+  required minlength="3" 
+  [(ngModel)]= 'editpet.type' 
+  #editpettype= 'ngModel'/>
+  <div *ngIf='!editpet.type.valid'> Pet type more than 3 characters</div>
+  
+  <input type= 'text' 
+  name='editpet.description' 
+  required minlength="3" 
+  [(ngModel)]= 'editpet.description' 
+  #editpetdescription= 'ngModel'/>
+  <div *ngIf='!editpet.description.valid'> Description more than 3 characters</div>
+
+  <input class="btn btn-outline-success" type='submit' value='Update'>
+  </form>

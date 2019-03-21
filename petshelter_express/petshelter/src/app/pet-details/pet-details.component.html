@@ -1,0 +1,13 @@
+<ul class="list-group">
+    <h5>{{ pet.name }}</h5>
+  <li class="list-group-item list-group-item-info"> {{ pet.name }} </li>
+  <li class="list-group-item list-group-item-info"> {{ pet.type }} </li>
+  <li class="list-group-item list-group-item-info"> {{ pet.description }} </li>
+  <li class="list-group-item list-group-item-info"> {{ pet.skill1 }} </li>
+  <li class="list-group-item list-group-item-info"> {{ pet.skill2 }} </li>
+  <li class="list-group-item list-group-item-info"> {{ pet.skill3}} </li>
+
+
+<button class="btn btn-outline-danger" (click)='deletePet(pet._id)'>Adopt This Pet</button>
+
+</ul>

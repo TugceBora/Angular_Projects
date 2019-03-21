@@ -1,0 +1,14 @@
+<h5>Pet Shelter</h5>
+<h3>These pets are looking for a home!</h3>
+<ul class="list-group">
+<p *ngFor= "let pet of pets" >
+    <li class="list-group-item list-group-item-info"> {{ pet.name }} </li>
+    <li class="list-group-item list-group-item-info"> {{ pet.type }} </li>
+    <li class="list-group-item list-group-item-info"> {{ pet.description }} </li>
+
+  <button class="btn btn-outline-success" [routerLink] = "['/pets/' +pet._id]">Details</button>
+  <button class="btn btn-outline-success"[routerLink] = "['/pets/' +pet._id +'/edit/']">Edit</button>
+
+</p>
+</ul>
+
