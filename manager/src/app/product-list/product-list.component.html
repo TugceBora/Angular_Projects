@@ -1,0 +1,15 @@
+<h5>Commerce Manager</h5>
+<h3>Product List</h3>
+<ul class="list-group">
+<p *ngFor= "let product of products" >
+
+    <li class="list-group-item list-group-item-info"> {{ product._id }} </li>
+    <li class="list-group-item list-group-item-info"> {{ product.name }} </li>
+    <li class="list-group-item list-group-item-info"> {{ product.qty }} </li>
+    <li class="list-group-item list-group-item-info"> {{ product.price }} </li>
+
+  <button class="btn btn-outline-success" [routerLink] = "['/products/' +product._id]">Details</button>
+  <button class="btn btn-outline-success"[routerLink] = "['/products/' +product._id +'/edit/']">Edit</button>
+
+</p>
+</ul>

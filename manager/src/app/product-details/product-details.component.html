@@ -1,0 +1,12 @@
+<ul class="list-group">
+    <h5>{{ product.name }}</h5>
+  <li class="list-group-item list-group-item-info"> {{ product.name }} </li>
+  <li class="list-group-item list-group-item-info"> {{ product.qty }} </li>
+  <li class="list-group-item list-group-item-info"> {{ product.price }} </li>
+
+
+
+<button class="btn btn-outline-danger" [routerLink] = "['/products/list']" (click)='deleteProduct(product._id)'>Delete</button>
+<button class="btn btn-outline-warning" [routerLink] = "['/products/list']" >Back</button>
+
+</ul>

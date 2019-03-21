@@ -1,0 +1,29 @@
+
+<h4> Edit This Product!! </h4>
+<form (submit)='updateProducts()'>
+<input type= 'text' 
+  name='editProduct.name' 
+  required minlength="3" 
+  [(ngModel)]= 'editProduct.name' 
+  #editProductname= 'ngModel'/>
+ 
+ 
+  <div *ngIf='!editProduct.name.valid'> Product name more than 3 characters</div>
+  
+  <input type= 'text' 
+  name='editProduct.qty' 
+  required minlength = "0" 
+  [(ngModel)]= 'editProduct.qty' 
+  #editProductqty= 'ngModel'/>
+  <div *ngIf='!editProduct.qty.valid'> product qty more than 0 </div>
+  
+  <input type= 'text' 
+  name='editProduct.price' 
+  required minlength= "0"  
+  [(ngModel)]= 'editProduct.price' 
+  #editProductprice= 'ngModel'/>
+  <div *ngIf='!editProduct.price.valid'> Price more than 0 $ </div>
+
+  <button type="submit" class="btn btn-outline-warning" > Update </button>
+  <button type="reset" class="btn btn-outline-danger" value="Reset">Reset</button>
+  </form>
