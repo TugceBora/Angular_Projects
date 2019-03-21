@@ -1,0 +1,12 @@
+<hr>
+<h5>Submit a cake to be rated</h5>
+<form (submit)="createCakes()">
+  <input type="text" name="cake.baker_name" [(ngModel)]="cake.baker_name">
+  <input type="text" name="cake.url" [(ngModel)]="cake.url">
+  <input type="text" name="cake.comment" [(ngModel)]="cake.comment" >
+  <input type="submit" value="Create a Cake">
+</form>
+
+<hr>
+
+
